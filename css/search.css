@@ -1,0 +1,38 @@
+body
+{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../img/flimg.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.List-box{
+  width: 370px;
+  border: 0.1px solid #eeeeee;
+  margin: 4% auto 0;
+  padding: 10px 20px 20px;
+  text-align: center;
+}
+.foot{
+  text-decoration: none;
+  color: #f7f3e9;
+  margin: 4% 2%;
+}
+.info{
+  background-color: #151515;
+  width: 100%;
+  border: 0.1px solid ;
+  margin: 10% auto 0;
+  float: bottom;
+  padding:5% 10%;
+  text-align: center;
+}
+.photobtn{
+  width: 120px;
+  height: 60px;
+
+}
+.Textd,.Date{
+  color: #eeeeee;
+}
+#ic,#omg,#de{
+  color: white;
+}

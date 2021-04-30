@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Favicon -->
+  <link href="img/japan.ico" rel="icon" />
+  <title>Tokyo</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/in.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #E3E2DE;
+      font-family: 'Noto Serif', serif;
+    }
+
+    #features {
+      position: relative;
+    }
+
+    .feature-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .feature-box {
+      padding: 4.5%;
+    }
+
+    img {
+      width: 400px;
+      height: 400px;
+    }
+
+    .night-life {
+      padding-top: 18px;
+      margin-left: 5px;
+    }
+
+    .spring-guide {
+      padding-top: 18px;
+      margin-right: -10px;
+    }
+
+    .scenic-spots {
+      padding-top: 18px;
+      margin-right: -25px;
+    }
+
+    .content {
+      margin: auto;
+      width: 60%;
+      padding: 50px 60px 3px 60px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="main.html"><img class="logo" src="logo.png" alt="img">Tokyo Diaries</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="https://shrouded-oasis-68975.herokuapp.com/">
+              Sign Up
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="https://enigmatic-woodland-82449.herokuapp.com/">To Do List</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="content">
+    <p>Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous metropolis. Today, Tokyo offers a seemingly unlimited choice of shopping, entertainment, culture and dining to its visitors. The city's history can be appreciated in districts
+      such as Asakusa and in many excellent museums, historic temples and gardens. Contrary to common perception, Tokyo also offers a number of attractive green spaces in the city center and within relatively short train rides at its outskirts.</p>
+  </div>
+  <section id="features">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="feature-box col-lg-4 night-life">
+          <img src="https://images.unsplash.com/photo-1546378197-0e1afd1539a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="night-walk">
+          <h2 class="feature-title">Night Life</h2>
+          <p>Tokyo is phenomenally vibrant at night.So, what areas of Tokyo have the best nightlife? It depends <a href="nightlife.html" style="text-decoration: none;">read more....</a></p>
+        </div>
+        <div class="feature-box col-lg-4 spring-guide">
+          <img src="https://qtxasset.com/luxurytraveladvisor/1518732582/MtFujiJapanSeanPavoneiStockGettyImagesPlusGettyImages.jpg?VaQX0RPf6x2UrcWBC.CYzFaU7l9XwQfW" alt="spring">
+          <h2 class="feature-title">Spring Guide</h2>
+          <p>With temperatures and moods thawing, spring sees Tokyo at its prettiest. Cherry blossoms <a href="springguide.html" style="text-decoration: none;">read more.....</a></p>
+        </div>
+        <div class="feature-box col-lg-4 scenic-spots">
+          <img src="https://www.gotokyo.org/en/see-and-do/attractions/images/hamarikyuu.jpg" alt="landmark">
+          <h2 class="feature-title">Attractions</h2>
+          <p>Trek on up to the tops of mountains and towers for sweeping panoramas, or down to <a href="attractions.html" style="text-decoration: none;">read more....</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="flight">
+    <h2>Schedule your trip with us!!</h2>
+    <a href="flight.html"><button class="button"><span>Schedule Your Trip</span></button></a>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Raleway:wght@200&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/feedback.css">
+
+    <script src="https://kit.fontawesome.com/6a611daeb5.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <h1 class="h1">Feedback</h1>
+
+    <div>
+        <form>
+            <h3>We would love to hear from you! Please take a moment to let us know about your experience.</h3>
+
+            <div class="name">
+                <label for="firstName">First Name</label>
+                <input type="text" name="fname" id="firstName" placeholder="First Name" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='First Name'" required><br>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lname" id="lastName" placeholder="Last Name" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Last Name'" required>
+            </div>
+
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email" placeholder="Email" onfocus="this.placeholder=''"
+                onblur="this.placeholder='Email'" required><br>
+
+            <div class="range">
+                <label for="range">How likely are you to visit tokyo now?</label>
+                <input type="range">
+            </div>
+
+            <div class="checkbox">
+                <p>Would you to suggest this website to anyone?</p>
+                <label for="yes">Yes</label>
+                <input type="checkbox" value="yes"> <br>
+                <label for="no">No</label>
+                <input type="checkbox" value="no">
+            </div>
+
+            <div class="experience">
+                <p>Rate this website</p>
+                <div class="col" style="white-space: nowrap;">
+                    <label for="verygood">Very Good</label>
+                    <input type="radio" id="verygood" name="experience" value="verygood">
+                </div>
+                <div class="col" style="white-space: nowrap;">
+                    <label for="good">Good</label>
+                    <input type="radio" id="good" name="experience" value="good">
+                </div>
+                <div class="col" style="white-space: nowrap;">
+                    <label for="satisfactory">Satisfactory</label>
+                    <input type="radio" id="satisfactory" name="experience" value="satisfactory">
+                </div>
+                <div class="col" style="white-space: nowrap;">
+                    <label for="notgood">Not Good</label>
+                    <input type="radio" id="notgood" name="experience" value="notgood"><br>
+                </div>
+            </div>
+
+            <div class="suggestion">
+                <label for="message">Leave your suggestions below</label> <br>
+                <textarea id="message"
+                    name="Message" placeholder="Suggestions" style="height:200px" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Suggestions'" required></textarea>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer-basic">
+        <footer id="footer">
+            <div class="social">
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://mail.google.com/mail"><i class="far fa-envelope"></i></a>
+                <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wordpress.com/"><i class="fab fa-wordpress-simple"></i></a>
+            </div>
+
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="main.html">Home</a></li>
+                <li class="list-inline-item"><a href="#">Attractions</a></li>
+                <li class="list-inline-item"><a href="#">Delicacies</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <p class="copyright">Tokyo Diaries © 2021</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

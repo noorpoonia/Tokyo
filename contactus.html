@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Raleway:wght@200&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/contactus.css">
+
+    <script src="https://kit.fontawesome.com/6a611daeb5.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm(){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/11423/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :) ")
+				},
+				error: function(){
+					alert("There was an error :( ")
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+
+    <div class="icon-bar">
+        <a href="main.html"><i style="color: #d3e0ea;" class="fas fa-home"></i></a>
+    </div>
+
+    <h1 class="h1">Contact Us</h1>
+    <form id="myForm">
+        <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="FirstName" placeholder="First Name" onfocus="this.placeholder=''" onblur="this.placeholder='First Name'" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="LastName" placeholder="Last Name" onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="mail">Email</label>
+            </div>
+            <div class="col-75">
+                <input type="email" id="mail" name="Email" placeholder="Email" onfocus="this.placeholder=''" onblur="this.placeholder='Email'" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="number">Phone Number</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="number" name="PhoneNumber" placeholder="Phone Number" onfocus="this.placeholder=''" onblur="this.placeholder='Phone Number'" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="message">Message</label>
+            </div>
+            <div class="col-75">
+              <textarea id="message" name="Message" placeholder="Write your Message" style="height:200px" onfocus="this.placeholder=''" onblur="this.placeholder='Write your Message'" required></textarea>
+            </div>
+          </div>
+    </form>
+
+    <button class="btn" onclick='SubForm()'>Submit</button>
+
+
+
+</body>
+</html>

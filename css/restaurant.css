@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  line-height: 2;
+  font-weight: bold;
+  height: 100%;
+  background-color: #557a95;
+}
+
+.icon-bar{
+  position: fixed;
+  -webkit-transform: translateY(-80%);
+  -ms-transform: translateY(-80%);
+  transform: translateY(-80%);
+  padding: 10px;
+  /* transition: all 0.3s ease; */
+  font-size: 35px;
+}
+
+.icon-bar :hover{
+  opacity: 0.8;
+}
+
+.logo {
+  line-height: 20px;
+  float: left;
+  margin: 16px 46px;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.logo a{
+  font-weight: lighter;
+  color: white;
+  background: linear-gradient(to right, #1f4068, #1f4068 50%, #f2f2f2 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+}
+.icon-bar{
+  position: fixed;
+  -webkit-transform: translateY(-80%);
+  -ms-transform: translateY(-80%);
+  transform: translateY(-80%);
+  padding: 10px;
+  /* transition: all 0.3s ease; */
+  font-size: 35px;
+}
+
+.icon-bar :hover{
+  opacity: 0.8;
+}
+
+.body{
+  background-color: #557a95;
+}
+
+.logo {
+  line-height: 20px;
+  float: left;
+  margin: 16px 46px;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.logo a{
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  line-height: 60px;
+}
+.menu a {
+  position: relative;
+  display: inline-block;
+  color: #f2f2f2;
+  background: linear-gradient(to right, #1f4068, #1f4068 50%, #f2f2f2 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-position: 0 100%;
+}
+
+
+nav ul {
+  line-height: 20px;
+  list-style: none;
+  overflow: hidden;
+  color: #d3e0ea;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+}
+
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 20px;;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d3e0ea;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  ul.menu li a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+.top {
+  background-image: url("https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  min-height: 753px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
